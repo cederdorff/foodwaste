@@ -5,7 +5,7 @@ export default class Header {
 
     template() {
         document.querySelector("#webapp").innerHTML += /*html*/ `
-        <main id="header" class="">
+        <section id="header" class="">
             <section id=logo>
                 <a href="#buy">
                     <img src="/Images/app/BSSFood.png" alt="logo">
@@ -13,7 +13,7 @@ export default class Header {
             </section>
               <p class="logout">logout</p>
             
-        </main>
+        </section>
       
     `;
     }

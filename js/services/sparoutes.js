@@ -1,7 +1,6 @@
 class SpaRoutes {
     constructor() {
         this.defaultPage = "login";
-
     }
 
     init() {
@@ -53,7 +52,7 @@ class SpaRoutes {
 
     // show and hide tabbar
     hideTabbar(hide) {
-        let tabbar = document.querySelector('#tabbar');
+        let tabbar = document.querySelector("#tabbar");
         if (hide) {
             tabbar.classList.add("hide");
         } else {

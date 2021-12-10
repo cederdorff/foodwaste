@@ -1,12 +1,14 @@
-export default class SignUp {
+export default class Signup {
     constructor() {
         this.template();
+        this.attachEvents();
     }
 
     template() {
-        document.querySelector("#webapp").innerHTML += /*html*/
+        document.querySelector("#webapp").innerHTML +=
+            /*html*/
             `
-        <main id="signUp" class="page">
+        <section id="signup" class="page">
             <section class="pages_body" id="signup_body">
                 <div class="parts">
                     <img id="part1" src="/Images/app/BSSFood.png" alt="">
@@ -28,7 +30,7 @@ export default class SignUp {
                             <input id="signupPassword" type="password" placeholder="Password" autocomplete="new-password">
                             <input id="signupPasswordConfirm" type="password" placeholder="Confirm password" autocomplete="new-password">
 
-                            <button type="button" id="btnSignup" onclick=signup()>Sign up</button>
+                            <button type="button" id="btnSignup">Sign up</button>
                         </form>
                     
                 </div>  
@@ -39,13 +41,38 @@ export default class SignUp {
                     <p>Please enter your personal details and start your journey.</p>
                     <div class="inner_child">
                         <p>Already have an account?</p>
-                        <a href="#logIn"><button>LOG IN</button></a>
+                        <a href="#login"><button>LOG IN</button></a>
                     </div>
                 </div>  
 
             </section>
-        </main>
+        </section>
 
     `;
+    }
+
+    async signup() {
+        const firstname = document.querySelector("#signupFirstname").value;
+        const lastname = document.querySelector("#signupLastname").value;
+        const mail = document.querySelector("#signupMail").value;
+        const password = document.querySelector("#signupPassword").value;
+        const city = document.querySelector("#signupCity").value;
+        const phone = document.querySelector("#signupPhone").value;
+        const passwordCheck = document.querySelector("#signupPasswordConfirm").value;
+
+        const user = { firstname, lastname, mail, password, city, phone, passwordCheck };
+        console.log(user);
+
+        const response = await fetch("../backend/phpservice/signup.php", {
+            method: "POST",
+            body: JSON.stringify(user)
+        });
+
+        const data = await response.json();
+        console.log(data);
+    }
+
+    attachEvents() {
+        document.querySelector("#btnSignup").onclick = () => this.signup();
     }
 }

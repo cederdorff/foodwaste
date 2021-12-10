@@ -1,13 +1,13 @@
 export default class SliderPage {
     constructor() {
         this.template();
-
     }
 
     template() {
-        document.querySelector('#webapp').innerHTML += /*html*/
+        document.querySelector("#webapp").innerHTML +=
+            /*html*/
             `
-            <main id="slider" class="page">
+            <section id="slider" class="page">
                 <section class="pages_body" id="slider_body">
                     <!----image slider start ----->  
                     <section class="slides_container">
@@ -60,12 +60,8 @@ export default class SliderPage {
                     </section>
                     <!-----buttons for signup and login end---->    
                 </section>            
-            </main>
+            </section>
                 
         `;
     }
-
-
-
-
 }

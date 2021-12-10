@@ -5,7 +5,7 @@ export default class FooterNav {
 
     template() {
         document.querySelector("#webapp").innerHTML += /*html*/ `
-        <main id="footer" class="tabbar">
+        <section id="footer" class="tabbar">
 
                 <section class="nav_body">
                             
@@ -22,7 +22,7 @@ export default class FooterNav {
                                 </div>
                             </section>
                         </section>
-        </main>
+        </section>
       
      
     `;

@@ -1,17 +1,16 @@
-//import pageFunctions from "../Services/pagesfunctions";
+//import pageFunctions from "../services/pagesfunctions";
 
 export default class BuyPage {
     constructor() {
         this.template();
         //this.pageFunctions() = pageFunctions;
-
-
     }
 
     template() {
-        document.querySelector('#webapp').innerHTML += /*html*/
+        document.querySelector("#webapp").innerHTML +=
+            /*html*/
             `
-            <main id="buy" class="page">
+            <section id="buy" class="page">
                 <section class="buy-container" id="buy_content">
                      <label for="filtertBy">Filter:
                         <select id="filterBy" onchange="filterBy(this.value)">
@@ -27,12 +26,8 @@ export default class BuyPage {
                 </section>  
                 <section id="products-container" class="grid-container"></section>
                 </section>           
-            </main>
+            </section>
                 
         `;
     }
-
-
-
-
 }

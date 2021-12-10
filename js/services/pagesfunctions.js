@@ -8,17 +8,14 @@ export default class PageFunctions {
     async initData() {
         this._products = await this.getData();
         this.appendProducts(this._products);
-        
     }
 
     async getData() {
         const response = await fetch("Json/foods.json");
         const data = await response.json();
         return data;
-        
-        
     }
-    
+
     appendProducts(foods) {
         let htmlTemplate = "";
         for (let food of foods) {
@@ -48,10 +45,8 @@ export default class PageFunctions {
                 </article>
             `;
         }
-        console.log(this.appendProducts)
         document.querySelector(".grid-container").innerHTML = htmlTemplate;
     }
-
 }
 
 //let pageFunctions = new PageFunctions();
