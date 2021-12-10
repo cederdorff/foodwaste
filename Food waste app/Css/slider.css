@@ -1,0 +1,166 @@
+
+#slider_body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(66, 97, 39, 1) 50%, rgba(245, 253, 176, 1) 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#426127", endColorstr="#F5FDB0", GradientType=1);
+}
+
+#slider {
+    height: 650px;
+    width: 1520px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides_container {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides_container input {
+    display: none;
+}
+
+.slide_img {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide_img img {
+    height: 650px;
+    width: 1520px;
+
+}
+
+/*css for manual slide navigation */
+.navigation-manual {
+    position: absolute;
+    width: 1520px;
+    margin-top: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #F2D27E;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+    filter: drop-shadow(0px 3px 6px rgb(0, 0, 0, 0.30));
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    background: #BCFFB9;
+}
+
+#radiol:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 1520px;
+    justify-content: center;
+    margin-top: 600px;
+
+}
+
+.navigation-auto div {
+    border: 2px solid #F2D27E;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background-color: #BCFFB9;
+  
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background-color: #BCFFB9;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: #BCFFB9;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background-color: #BCFFB9;
+}
+
+.submit_btns{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 1520px;
+    margin-top: 180px;
+    
+}
+
+.subsBtn{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    width: 241px;
+    height: 80px;
+    border-radius: 40px;
+    cursor: pointer;
+    border: 1px solid #222B16;
+    
+}
+
+
+
+#sub1{
+    background: #F5FDB0;
+    color: #222B16;
+    margin-right: 65.5px;
+   
+}
+#sub1:hover{
+    background: #F5951C;
+    color: white;
+}
+
+#sub2{
+    background: #426127;
+    color: #ffffff;
+    margin-left: 65.5px;
+}
+
+#sub2:hover {
+    background: #F5951C;
+    color: #222B16;
+}

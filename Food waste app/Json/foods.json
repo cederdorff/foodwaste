@@ -1,0 +1,32 @@
+  [
+    {
+      "id": 1,
+      "no": 1,
+      "seller": "Adam Andersen",
+      "category": "Vegetables",
+      "name": "Broccoli",
+      "weight": 0.3,
+      "quantity": null,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Broccoli_DSC00861.png/1024px-Broccoli_DSC00861.png"
+    },
+  {
+    "id": 2,
+    "no": 2,
+    "seller": "James Bond",
+    "category": "Fruits",
+    "name": "Apple",
+    "weight": null,
+    "guantity": 6,
+    "img": "https://key0.cc/images/preview/5959_85f282029cef50f588b9a046f1e78b19.png"
+  },
+  {
+    "id": 3,
+    "no": 3,
+    "seller": "Mike Hansen",
+    "category": "Protein",
+    "name": "Chicken",
+    "weight": 0.75,
+    "guantity": null,
+    "img": "https://world.openfoodfacts.org/images/products/408/860/014/8151/front_en.4.full.jpg"
+  }
+]

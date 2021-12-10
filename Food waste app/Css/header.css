@@ -1,0 +1,38 @@
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 120px;
+    width: 100%;
+    background: #426127;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#logo{
+    height: 10vh;
+    position: absolute;
+    top: 0;
+
+}
+
+#logo img{
+    height: 135%;
+}
+
+.logout{
+    display: flex;
+    align-items: flex-end;
+    margin: 7vh 0vh 0vh 0vh;
+    right: 5px;
+    position: fixed;
+    cursor: pointer;
+    font-size: 20px;
+    color: #F5951C;
+
+}
+
+.logout:hover{
+    color: #BCFFB9;
+}
