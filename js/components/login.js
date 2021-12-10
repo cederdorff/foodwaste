@@ -12,7 +12,7 @@ export default class Login {
             <section class="pages_body" id="login_body">
                 
                 <div class="logparts">
-                    <img id="logpart1" src="/Images/app/BSSFood.png" alt="">
+                    <img id="logpart1" src="/images/app/BSSFood.png" alt="">
                 
                     <!-- login form -->
                     <header class="topbar">

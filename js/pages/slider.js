@@ -21,16 +21,16 @@ export default class SliderPage {
 
                         <!----slide images start------->
                         <section class="slide_img first">
-                            <img src="Images/app/img-1.png" alt="">
+                            <img src="images/app/img-1.png" alt="">
                         </section>
                         <section class="slide_img">
-                            <img src="Images/app/img-2.png"alt="">
+                            <img src="images/app/img-2.png"alt="">
                         </section>
                         <section class="slide_img">
-                            <img src="Images/app/img-3.png"alt="">
+                            <img src="images/app/img-3.png"alt="">
                         </section>
                         <section class="slide_img">
-                            <img src="Images/app/img-4.png"alt="">
+                            <img src="images/app/img-4.png"alt="">
                         </section>
                         <!-------slide images end---->
 

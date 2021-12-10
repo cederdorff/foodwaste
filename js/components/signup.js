@@ -11,7 +11,7 @@ export default class Signup {
         <section id="signup" class="page">
             <section class="pages_body" id="signup_body">
                 <div class="parts">
-                    <img id="part1" src="/Images/app/BSSFood.png" alt="">
+                    <img id="part1" src="/images/app/BSSFood.png" alt="">
                 
                 <!-- signup form -->  
                 <div class="parts" id="part2">

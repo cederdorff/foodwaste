@@ -8,7 +8,7 @@ export default class Header {
         <section id="header" class="">
             <section id=logo>
                 <a href="#buy">
-                    <img src="/Images/app/BSSFood.png" alt="logo">
+                    <img src="/images/app/BSSFood.png" alt="logo">
                 </a>
             </section>
               <p class="logout">logout</p>
